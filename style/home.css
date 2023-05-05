@@ -22,6 +22,7 @@
   animation: land 2s ease-in-out;
   font-size: 11rem;
   font-weight: 900;
+  color: white;
 }
 .fullname {
   animation: Fade-in 1.6s ease-in-out;
