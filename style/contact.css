@@ -1,0 +1,147 @@
+.contact{
+    background-color: white;
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.fa{
+   font-size: 20px;
+   color: antiquewhite;
+}
+.icons{
+    margin:3rem 8rem;
+    display: flex;
+    border-radius:50%;
+    align-items: center;
+    justify-content:center;
+    height:3rem;
+    width:3rem;
+    background-color: #2a7bad;}
+.container-1{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.details{
+font-weight: 500;
+}
+a{
+    text-decoration: none;
+}
+.form-control{
+    border:none;
+    border-bottom:1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    box-shadow: none;
+
+}
+
+input:focus{
+    outline: none;
+    border-bottom:1px solid #2a7bad;
+}
+textarea:focus{
+    outline: none;
+    border-bottom:1px solid #4c8bb2;
+}
+.container-2{
+    width:50vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+border-radius: 3px;
+    position: relative;
+    min-height:30rem;
+}
+.contacts{
+display: flex;
+position: relative;
+flex-direction: column;
+margin:1rem 1rem;
+width:100%;
+}
+.button{
+  position:absolute;
+ bottom:4rem;
+ left:5rem;
+}
+.btn{
+   text-shadow: rgba(0, 0, 255, 0.25) 0px 50px 100px -20px, rgba(163, 18, 18, 0.3) 0px 30px 60px -30px;
+    color: aliceblue;
+    font-size: small;
+    transition:2s linear;
+    border:none;
+    background-color: #2a7bad;
+    height: 2.3rem;
+    width: 7rem;
+    border-radius: 2px;
+}
+.btn:hover{
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background-color: #1882c4;
+}
+.btn:active {
+    transform: scale(-.01);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+.btn:click{
+    transform: rotateX(4deg);
+}
+
+.contactUs{
+    position:absolute;
+    width: 90%;
+    /* display: inline-block; */
+    /* flex-wrap: wrap; */
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+.special{
+    position: relative;
+    display: flex;
+}
+
+h1{
+   position: absolute;
+   top:2rem;
+}
+
+@media only screen and (max-width: 1168px) {
+    .icons{
+        margin: 3rem  5.1rem;
+    }
+    .container-2{
+        width:70vw;
+    }
+  }
+  @media only screen and (max-width: 835px) {
+    .container-1{
+        flex-direction: column;
+    }
+    .container-2{
+        width:80vw;
+    }
+    .button{
+        bottom:1.5rem;
+    }
+    .special{
+        flex-direction: column;
+    }
+    .contactUs{
+        width:85%;
+    }
+  }
