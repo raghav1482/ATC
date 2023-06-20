@@ -12,21 +12,26 @@
 
 /* ATC text box */
 .txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem auto;
   height: max-content;
-  margin: 7rem auto;
-  text-transform: uppercase;
-  border-radius: 10px;
   z-index: 2;
 }
-.name {
+.light{
+  width: 13rem;
   animation: land 2s ease-in-out;
-  font-size: 11rem;
-  font-weight: 900;
-  color: white;
 }
-.fullname {
-  animation: Fade-in 1.6s ease-in-out;
-  font-size: 1.19rem;
+.name{
+  padding-left: 1rem;
+  width: 25rem;
+  animation: Fade-in 2s ease-in;
+}
+.ln{
+  background-color: white;
+  height: 10rem;
+  width: 2px;
 }
 
 /* animations on Name */
@@ -34,23 +39,25 @@
   from {
     display: none;
     opacity: 0;
+    transform: translateX(3rem);
   }
   to {
     display: block;
     opacity: 1;
+    transform: translateX(0);
   }
 }
 @keyframes Fade-in {
   0% {
     opacity: 0;
-    transform: translateY(2em);
+    transform: translateX(-2em);
   }
   40% {
     opacity: 0;
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
@@ -63,7 +70,7 @@
   background-size: cover;
   width: 100%;
   height: 90vh;
-  filter: brightness(.23);
+  filter: brightness(.4);
 }
 
 /* top-brands */
@@ -190,6 +197,7 @@
   height: 60px;
   width: 50px;
   margin: 0 15px;
+  mix-blend-mode: color-dodge;
 }
 .feature-name {
   font-size: 25px;
@@ -199,20 +207,18 @@
 }
 
 /* responsive */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 800px) and (max-width: 1000px){
   .txt {
-    margin: 6rem auto;
+    margin: 12rem auto;
   }
-
-  .name {
-    font-size: 15rem;
+  .name{
+    width: 20rem;
   }
-
-  .fullname {
-    font-size: 1.6rem;
+  .light{
+    width: 9rem;
   }
 }
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 800px){
   .row{
     display: block;
   }
@@ -225,8 +231,19 @@
     transform: scale(0.8);
     width:0;
   }
+  .name{
+    width: 55%;
+    height: auto;
+  }
+  .light{
+    width: 25%;
+    height: auto;
+  }
 }
 @media only screen and (max-width: 550px){
+  .txt {
+    margin: 12rem auto;
+  }
   .feat{
     font-size: 2.5rem;
   }
