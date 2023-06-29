@@ -218,7 +218,7 @@
 .row {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 2.3rem;
+  margin: 2.3rem auto;
 }
 
 /* each feature div */
@@ -226,13 +226,13 @@
   display: flex;
   align-items: center;
   padding: 5px;
-  width: 25%;
+  width: 23%;
 }
 
 .f-logo {
   filter: invert(100%);
   height: 60px;
-  width: 50px;
+  width: 60px;
   margin: 0 15px;
   mix-blend-mode: color-dodge;
 }
